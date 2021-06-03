@@ -12,7 +12,7 @@ def get_assets(number = 100):
         bat_code = r"""python redditdownloader {} --limit={}""".format(sub_reddit, str(number));       
         jump_directory = r"""cd {}""".format(path) 
         #bat_code = bat_code.encode('utf-8')
-        print('sudo {} ; {}'.format(jump_directory,bat_code))
-        os.system('sudo {} ; {}'.format(jump_directory,bat_code))
+        print(' {} ; {}'.format(jump_directory,bat_code))
+        os.system('{} ; {}'.format(jump_directory,bat_code))
         
 get_assets(50)
