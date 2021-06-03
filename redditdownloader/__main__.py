@@ -47,7 +47,7 @@ def run():
 		'====================================\r\n' +
 		('   Reddit Media Downloader %s\r\n' % meta.current_version) +
 		'====================================\r\n' +
-		'    (By ShadowMoose @ Github)\r\n')
+		'    (By ShadowMoose, Adapted by NonStopEagle137 @ Github)\r\n')
 	if args.version:
 		sys.exit(0)
 
