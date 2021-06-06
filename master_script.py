@@ -17,4 +17,4 @@ def get_assets(number = 100):
         print(' {} ; {}'.format(jump_directory,bat_code))
         os.system('{} ; {}'.format(jump_directory,bat_code))
         
-get_assets(50)
+get_assets(5)
