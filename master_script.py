@@ -6,7 +6,9 @@ import os
 import sys
 import time
 def get_assets(number = 100):
-    sub_reddits = ['r/meme'] # list of all good meme-subreddit accounts goes here.
+    sub_reddits = input("Please Input a comma seperated Subreddit list : ");
+    sub_reddits = list(sub_reddits.split(','))
+    #sub_reddits = ['r/meme'] # list of all good meme-subreddit accounts goes here.
     path = os.path.abspath(os.path.dirname(sys.argv[0]))
     for sub_reddit in sub_reddits:
         bat_code = r"""python redditdownloader {} --limit={}""".format(sub_reddit, str(number));       
