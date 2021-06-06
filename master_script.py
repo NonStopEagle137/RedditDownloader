@@ -16,5 +16,6 @@ def get_assets(number = 100):
         #bat_code = bat_code.encode('utf-8')
         print(' {} ; {}'.format(jump_directory,bat_code))
         os.system('{} ; {}'.format(jump_directory,bat_code))
-        
-get_assets(5)
+
+number_of_memes_per_subreddit = input("Enter the Number of Memes to download per subreddit : ");
+get_assets(eval(number_of_memes_per_subreddit))
